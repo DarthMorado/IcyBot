@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IcyBot
 {
-    public class AppSettings
+    public class AppOptions
     {
         public string BotToken { get; set; }
     }

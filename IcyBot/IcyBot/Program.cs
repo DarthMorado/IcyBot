@@ -20,7 +20,7 @@ public class Program
         .ConfigureServices((context, services) =>
         {
             services.AddHostedService<App>();
-            services.Configure<AppSettings>(context.Configuration.GetSection("AppSettings"));
+            services.Configure<AppOptions>(context.Configuration.GetSection("AppSettings"));
             Configure(services, context.Configuration);
         });
 
